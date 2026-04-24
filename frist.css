@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+    margin: 0;
+    background-image: url("bg no.1.webp"); /* \ remove */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgba(0,0,0,0.7); /* empty → fix */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-radius: 15px;
+    flex-wrap: wrap; /* mobile fix */
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    cursor:pointer;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+/* HERO */
+.hero{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.content{
+    max-width: 500px;
+    margin: auto;
+}
+
+.content h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.button{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn1,
+.btn2{
+    background-color: black;
+    color: rgb(105, 236, 221);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover,
+.btn2:hover{
+    background-color: rgb(105, 236, 221);
+    color: black;
+}
+
+/* LINKS */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HOVER MENU */
+.cool:hover{
+    background: #ff0101;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px){
+
+    .navbar{
+        padding: 15px 20px;
+    }
+
+    .menu{
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .hero{
+        padding: 60px 15px;
+    }
+
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content p{
+        font-size: 14px;
+    }
+}
